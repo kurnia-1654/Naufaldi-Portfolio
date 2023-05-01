@@ -514,3 +514,132 @@ footer {
 .ic-mentor {
   background: url(res/mentor.svg);
 }
+
+/* All project - Portofolio page */
+
+#all-project .section-title {
+  margin-bottom: 80px;
+
+  font-size: 5.6em;
+  display: flex;
+  gap: 30px;
+}
+
+#all-project .section-title h2 {
+  max-width: 380px;
+  display: inline;
+}
+
+@media screen and (max-width: 560px) {
+  section {
+    padding: 32px 20px;
+  }
+
+  header {
+    display: none;
+  }
+
+  #hero {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "avatar"
+      "heading"
+      "bio"
+      "social";
+    text-align: center;
+    align-items: center;
+  }
+
+  #hero h1 {
+    font-size: 3.2em;
+  }
+
+  #hero .avatar {
+    margin: 0 auto;
+  }
+  .social-media .social-media-links {
+    justify-content: center;
+  }
+
+  #my-work {
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+    text-align: center;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-thumbnail-image-wrapper {
+    width: 60%;
+    padding: 60px 52px 0;
+    margin: 0;
+  }
+  .project-thumbnail-image-wrapper img {
+    width: 250%;
+  }
+
+  footer {
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-links-list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+  }
+
+  .footer-social-links-list {
+    padding: 16px;
+  }
+
+  /* Mentorship */
+
+  #mentorship,
+  #mentorship-benefit {
+    flex-direction: column;
+  }
+
+  #mentorship-benefit .section-left {
+    margin-bottom: 80px;
+  }
+  #mentorship-benefit .section-left,
+  #mentorship-benefit .section-right,
+  #mentorship .section-left,
+  #mentorship .section-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  #mentorship-benefit .section-right .card {
+    display: block;
+  }
+
+  #mentorship .section-right .card {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  #mentorship .section-right .card .card-content {
+    width: 100%;
+  }
+
+  #mentorship-benefit .section-right .card .card-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  #mentorship-benefit .section-right .card .card-icon-wrapper {
+    margin: -100px auto 0;
+  }
+}
