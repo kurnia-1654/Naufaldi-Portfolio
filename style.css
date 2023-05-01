@@ -448,3 +448,69 @@ footer {
 .ic-linkedin {
   background: url(res/icon/ic-linkedin.svg);
 }
+
+/* left-border-grad */
+
+.left-border-grad {
+  margin: 20px 0;
+  padding-left: 15px;
+  border-left: 4px solid var(--clr-green);
+}
+
+#mentorship,
+#mentorship-benefit {
+  display: flex;
+  gap: 30px;
+}
+
+.section-left {
+  width: 45%;
+}
+
+.section-right .card {
+  max-width: 652px;
+  padding: 40px;
+  margin-bottom: 13px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#mentorship-benefit .section-left img {
+  max-width: 400px;
+}
+
+#mentorship-benefit .section-right .card {
+  display: flex;
+  text-align: left;
+}
+
+#mentorship-benefit .section-right .card h3 {
+  font-weight: 700;
+  font-size: 2.8em;
+  line-height: 72px;
+}
+
+#mentorship-benefit .card-icon-wrapper {
+  margin: auto 44px auto -100px;
+  width: 120px;
+  height: 120px;
+}
+
+.card-content {
+  width: calc(100% - 120px);
+}
+
+.ic-book {
+  background: url(res/book.svg);
+}
+
+.ic-finger {
+  background: url(res/finger.svg);
+}
+.ic-mentor {
+  background: url(res/mentor.svg);
+}
