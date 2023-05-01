@@ -143,8 +143,61 @@ nav.navbar-desktop a:last-child {
   margin-right: -16px;
 }
 
-nav.navbar-desktop a.active {
+nav.navbar-desktop a.active,
+.mobile-menu a.active {
   color: var(--clr-text-primary);
+  font-weight: 600;
+}
+
+/* Mobile menu */
+
+.mobile-menu {
+  width: 100%;
+  height: auto;
+  background: #232323;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding: clamp(12px, 5vw, 18px);
+  color: var(--clr-text-secondary);
+}
+
+.mobile-menu a span.icon {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.8);
+}
+
+.mobile-menu a.active span.icon {
+  filter: brightness(1);
+}
+.mobile-menu .ic-home {
+  background: url(res/icon/ic-home.svg);
+}
+.mobile-menu .ic-mentorship {
+  background: url(res/icon/ic-mentorship.svg);
+}
+.mobile-menu .ic-portofolio {
+  background: url(res/icon/ic-portofolio.svg);
+}
+.mobile-menu .ic-more {
+  background: url(res/icon/ic-more.svg);
 }
 
 /* Hero Section */
@@ -539,6 +592,10 @@ footer {
     display: none;
   }
 
+  .mobile-menu {
+    display: flex;
+  }
+
   #hero {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
@@ -641,5 +698,15 @@ footer {
 
   #mentorship-benefit .section-right .card .card-icon-wrapper {
     margin: -100px auto 0;
+  }
+
+  /* #all-project  */
+
+  #all-project .section-title {
+    flex-direction: column;
+  }
+
+  #all-project .section-title img {
+    width: 50%;
   }
 }
