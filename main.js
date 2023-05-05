@@ -3,7 +3,7 @@
 var headerContent = `
     <div class="logo-left">Naufaldi</div>
     <nav class="navbar-desktop">
-        <a href="/">Home</a>
+        <a href="./">Home</a>
         <a href="mentorship.html">Mentorship</a>
         <a href="project.html">Portofolio</a>
         <a href="#">Snippet</a>
@@ -42,7 +42,7 @@ document.body.append(footer)
 // Mobile menu
 
 var mobileMenuContent = `
-    <a href="/"><span class="icon ic-home"></span>Home</a>
+    <a href="./"><span class="icon ic-home"></span>Home</a>
     <a href="mentorship.html"><span class="icon ic-mentorship"></span>Mentorship</a>
     <a href="project.html"><span class="icon ic-portofolio"></span>Portofolio</a>
     <a href="#"><span class="icon ic-more"></span>More</a>
